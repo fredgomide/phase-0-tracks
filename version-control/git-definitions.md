@@ -1,4 +1,4 @@
-# Git Definitions
+# Git Definitions - Fred Version
 
 **Instructions: ** Define each of the following Git concepts.
 
