@@ -1,4 +1,4 @@
-# Git Definitions - Fred Version
+# Git Definitions - Fred Version _Tag Teacher
 
 **Instructions: ** Define each of the following Git concepts.
 
