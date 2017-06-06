@@ -1,4 +1,4 @@
-# Git Definitions - Fred Version
+# Git Definitions - Fred Version - from scratch - 6-6-17
 
 **Instructions: ** Define each of the following Git concepts.
 
