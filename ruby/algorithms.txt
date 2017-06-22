@@ -1,0 +1,24 @@
+# Algorithm for robot using elevator.
+
+
+- Stand outside of the elevator door.
+- Press the elevator button.
+	- Wait for elevator to arrive on designated floor.
+- Once elevator door opens, enter elevator.
+- Look for the floor buttons panel. 
+- Go to floor button panel.
+- Push 16th floor.
+	-Wait elevator to arrive at the designated floor and open door.
+- Exit elevator
+
+
+#Real-life algorithm - defrosting chicken.
+
+- Take the chicken out of the freezer.
+- Take the chicken of the package.
+- Put it into a microwavable bowl.
+- Put it into the microwave
+- Set the timer
+	-Check if its ready, if not, set another 3 minutes.
+- Chicken ready to be cooked.
+
