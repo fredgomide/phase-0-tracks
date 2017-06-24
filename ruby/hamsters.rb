@@ -18,7 +18,7 @@ puts "Is the animal a good candidate for adoption?"
     if candidate == "y"
       good_for_adoption = true
     else good_for_adoption = false
-end
+  end
 
 # Estimated age?
 puts "Estimated hamster age?"
