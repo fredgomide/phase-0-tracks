@@ -39,13 +39,11 @@ until process_times == 0
 
   puts "Name any allergies you might have and type 'done' when finished."
      allergies = gets.chomp
-    until allergies == "sunshine" do
+    until allergies == ("sunshine" || "done") do
        puts "Do you have any other allergies?"
        allergies = gets.chomp
             if allergies == "sunshine"
-        allergies = true
-      else
-        allergies = false
+        puts "Probably a Vampire!!"
     end
        break if allergies == "done"
     end
