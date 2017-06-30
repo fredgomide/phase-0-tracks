@@ -12,9 +12,10 @@ until process_times == 0
     name = gets.chomp
 
   puts "How old are you? What year were you born?"
+      current_year = Time.now
       employee_age = gets.chomp.to_i
       year_born = gets.chomp.to_i
-       age = 2017 - year_born
+       age = current_year.year - year_born
       if age == employee_age
          age = true
         else
