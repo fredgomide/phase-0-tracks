@@ -39,12 +39,13 @@ client_1[:favorite_material] = gets.chomp
 puts "Whould you like to change any entry made above? If not, enter 'none' or enter the category you want to change 'first_name' 'last_name' 'age' 'number_of_children' 'decor_style' 'favorite_color' 'favorite_material'"
     change = gets.chomp
 
-    if change.to_sym == true
+    loop do
+    change.to_sym == client_1
      puts "What is the new entry for #{change}?"
      client_1[change.to_sym] = gets.chomp
-    else
-    change == "none"
+     change << change
+    break if change == "none"
     end
 
 
-puts client_1
+p client_1
