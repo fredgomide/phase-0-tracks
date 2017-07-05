@@ -27,7 +27,7 @@ client_1[:age] = gets.chomp
 puts "How many children do you have?"
 client_1[:number_of_children] = gets.chomp
 
-puts "What is your decor style."
+puts "What is your decor style?"
 client_1[:decor_style] = gets.chomp
 
 puts "What is your favorite color?"
@@ -39,12 +39,12 @@ client_1[:favorite_material] = gets.chomp
 puts "Whould you like to change any entry made above? If not, enter 'none' or enter the category you want to change 'first_name' 'last_name' 'age' 'number_of_children' 'decor_style' 'favorite_color' 'favorite_material'"
     change = gets.chomp
 
-    loop do
-    change.to_sym == client_1
+     loop do
+     change.to_sym == client_1
      puts "What is the new entry for #{change}?"
      client_1[change.to_sym] = gets.chomp
      change << change
-    break if change == "none"
+     break change == "none"
     end
 
 
