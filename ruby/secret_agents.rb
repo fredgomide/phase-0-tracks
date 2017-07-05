@@ -1,56 +1,47 @@
-# Define the method to encrypt a password
-def encrypt
+##Write methods to encrypt and decrypt passwords:
 
-# Ask the user to enter their password
-puts "Enter your password"
-# Make the password the variable
-secret_password = gets.chomp
-puts "Here, let us encrypt your password"
-
-# Identify index of the first letter in the password
-index = 0
-encrypted_string = ""
+# METHOD TO ENCRYPT A PASSWORD
+def encrypt(secret_password)
+# Create a character index
+ index = 0
+ alphabet = ("abcdefghijklmnopqrstuvwxyz")
+# Create an empty string to have a return value
+ encrypted_string = ""
 # Loop until you get to the last letter in the password
-while index < secret_password.length do
-encrypted_string += secret_password[index].next
-# Call the index  plus1
-index += 1
-end
-#Take array of encrypted password letter and strings it together
-puts encrypted_string
-
+ while index < secret_password.length do
+  encrypted_string += secret_password[index].next
+# Call the index  plus 1
+  index += 1
+ end
+ #return the implicit empty response at the end
+  encrypted_string
 # end encryption method
 end
 
-# Define method to decrypt a password
-def decrypt
+# ASK FOR PASSWORD FROM USER AND ENCRYPT IT
+puts "What is your password?"
+  secret_password = gets.chomp
+puts encrypt(secret_password)
 
-# Ask user for the encrypted password for us to decrypt
-puts "Put your encrypted password"
-decrypted = gets.chomp
-puts "Here, let us decrypt your password"
-
-# Identify the letter of the first character in the decrypted password
+# METHOD TO DECRYPT A PASSWORD
+def decrypt(encrypted_password)
 index = 0
-# Listing the entire alphabet in order to match the letters of the decrypted password to their correct index
+# List the entire alphabet in order to match the letters of the decrypted password to their correct index
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-end
-# Preparing an empty string to store results
+# Prepare an empty string to store results
 decrypted_string = ""
 # Create a loop to iterate over the encrypted password
-while index < decrypted.length do
-  alphabet.index(decrypted[index])
-  decrypted_index = alphabet.index(decrypted[index])
+while index < encrypted_password.length do
+  decrypted_index = alphabet.index(encrypted_password[index])
   decrypted_string+= alphabet[decrypted_index -1]
     index += 1
 end
-# Displays decrypted password
-  puts decrypted_string
-
+#return the implicit empty response at the end
+  decrypted_string
 end
 
-encrypt
-decrypt
-decrypt(encrypt("swordfish"))
 
-puts "Yay. Go you. Whoo password security."
+# DECRYPT PASSWORD
+puts "What is your encrypted password?"
+  encrypted_password = gets.chomp
+puts decrypt(encrypted_password)
