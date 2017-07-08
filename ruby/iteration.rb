@@ -20,7 +20,6 @@ p colors
 colors.each do |color|
 puts color
 end
-
 puts "Colors after .each call:"
 p colors
 
