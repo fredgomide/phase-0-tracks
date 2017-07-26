@@ -1,5 +1,4 @@
 ## loop
-
 puts "How many employees will be processed at this time?"
 process_times = gets.chomp.to_i
 
